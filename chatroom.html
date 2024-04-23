@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="chatroom.css" />
+    <script src="Server.js"></script>
+  </head>
+  <body>
+    <div class="chatRoomWrapper">
+      <div class="tokenContainer">
+        <input
+          type="text"
+          id="nameInput"
+          placeholder="Enter your Token"
+          style="flex: 1"
+          value="Bearer 235028|7tSwJ99Mj6vqwUPtbo77GLRMz5hIej6skYpVIHWG"
+        />
+        <button id="setName">Set</button>
+      </div>
+      <div class="chatBoxHeader">
+        <span> Chat </span>
+      </div>
+      <div class="chatBox" id="chatList"></div>
+      <div class="tipHover" id="tipHover">
+        <div class="tipHoverWrapper">
+          <div class="tipTitleContainer">
+            <span>Gift Box</span>
+            <div class="tipTitleDiv1">
+              <!-- <span class="userName" id="userName">X</span> -->
+              <span class="userBalance" id="userBalance">Balance: 0.00</span>
+              <span class="closeGift" id="closeGift">X</span>
+            </div>
+          </div>
+          <div class="tipListHolder">
+            <div class="tipItem" onclick="sendGift(1)">
+              <img class="tipItemImage" src="./image heart.webp" />
+              <span class="tipItemName">Heart</span>
+              <span class="tipItemPrice">1</span>
+            </div>
+            <div class="tipItem" onclick="sendGift(10)">
+              <img class="tipItemImage" src="./image heart.webp" />
+              <span class="tipItemName">Heart</span>
+              <span class="tipItemPrice">10</span>
+            </div>
+            <div class="tipItem" onclick="sendGift(100)">
+              <img class="tipItemImage" src="./image heart.webp" />
+              <span class="tipItemName">Heart</span>
+              <span class="tipItemPrice">100</span>
+            </div>
+            <div class="tipItem" onclick="sendGift(1000)">
+              <img class="tipItemImage" src="./image heart.webp" />
+              <span class="tipItemName">Heart</span>
+              <span class="tipItemPrice">1000</span>
+            </div>
+            <div class="tipItem" onclick="sendGift(2)">
+              <img class="tipItemImage" src="./image heart.webp" />
+              <span class="tipItemName">Heart</span>
+              <span class="tipItemPrice">2</span>
+            </div>
+            <div class="tipItem" onclick="sendGift(20)">
+              <img class="tipItemImage" src="./image heart.webp" />
+              <span class="tipItemName">Heart</span>
+              <span class="tipItemPrice">20</span>
+            </div>
+            <div class="tipItem" onclick="sendGift(200)">
+              <img class="tipItemImage" src="./image heart.webp" />
+              <span class="tipItemName">Heart</span>
+              <span class="tipItemPrice">200</span>
+            </div>
+            <div class="tipItem" onclick="sendGift(2000)">
+              <img class="tipItemImage" src="./image heart.webp" />
+              <span class="tipItemName">Heart</span>
+              <span class="tipItemPrice">2000</span>
+            </div>
+            <div class="tipItem" onclick="sendGift(5)">
+              <img class="tipItemImage" src="./image heart.webp" />
+              <span class="tipItemName">Heart</span>
+              <span class="tipItemPrice">5</span>
+            </div>
+            <div class="tipItem" onclick="sendGift(50)">
+              <img class="tipItemImage" src="./image heart.webp" />
+              <span class="tipItemName">Heart</span>
+              <span class="tipItemPrice">50</span>
+            </div>
+            <div class="tipItem" onclick="sendGift(500)">
+              <img class="tipItemImage" src="./image heart.webp" />
+              <span class="tipItemName">Heart</span>
+              <span class="tipItemPrice">500</span>
+            </div>
+            <div class="tipItem" onclick="sendGift(5000)">
+              <img class="tipItemImage" src="./image heart.webp" />
+              <span class="tipItemName">Heart</span>
+              <span class="tipItemPrice">5000</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="MessageBoxContainer">
+        <button class="sendGift" id="sendGift">Gift</button>
+        <input
+          type="text"
+          id="messageInput"
+          placeholder="Enter your message"
+          class="messageBox"
+        />
+        <button class="messageButton" id="sendButton">Send</button>
+      </div>
+    </div>
+
+    <script src="SendMessage.js"></script>
+    <script src="Controls.js"></script>
+  </body>
+</html>

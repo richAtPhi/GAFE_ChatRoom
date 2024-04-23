@@ -1,0 +1,214 @@
+.chatRoomWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 400px;
+  margin: 0 auto;
+}
+
+.tokenContainer {
+  display: flex;
+  margin-top: 20px;
+}
+
+.chatBox {
+  width: 395px;
+  height: 70vh;
+  background: rgb(73, 18, 33);
+  background: linear-gradient(
+    99deg,
+    rgba(73, 18, 33, 1) 0%,
+    rgba(44, 0, 15, 1) 90%
+  );
+  padding-left: 15px;
+  overflow: auto;
+  border: 3px solid #c5946a;
+  border-bottom: none;
+  padding-top: 15px;
+}
+
+.MessageBoxContainer {
+  display: flex;
+  justify-content: center;
+  width: 414px;
+  align-items: center;
+}
+
+.messageBox {
+  border: 3px solid #c5946a;
+  border-right: none;
+  /* border-radius: 0 0 0 10px; */
+  height: 50px;
+  line-height: normal;
+  color: #fbf8dd;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  user-select: auto;
+  font-size: 16px;
+  padding: 0 6px;
+  padding-left: 12px;
+  background: rgb(73, 18, 33);
+  background: linear-gradient(
+    99deg,
+    rgba(73, 18, 33, 1) 0%,
+    rgba(44, 0, 15, 1) 90%
+  );
+}
+
+.messageButton {
+  border: 3px solid #c5946a;
+  border-radius: 0 0 10px 0;
+  display: inline-block;
+  outline: 0;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 13px;
+  height: 50px;
+  background: rgb(73, 18, 33);
+  background: linear-gradient(
+    99deg,
+    rgba(73, 18, 33, 1) 0%,
+    rgba(44, 0, 15, 1) 90%
+  );
+  color: white;
+  padding: 0 10px;
+}
+
+.messageItem {
+  color: #fbf8dd;
+  font-size: 18px;
+}
+
+.chatSenderName {
+  color: #f38f02;
+  font-weight: 600;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.chatSenderMessage {
+  color: #fbf8dd;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.chatBoxHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(156, 116, 81);
+  background: linear-gradient(
+    270deg,
+    rgba(156, 116, 81, 1) 0%,
+    rgba(135, 87, 47, 1) 90%
+  );
+  width: 410px;
+  margin-top: 20px;
+  border: 3px solid #c5946a;
+  border-bottom: none;
+  border-radius: 15px 15px 0 0;
+  height: 20px;
+  color: #fbf8dd;
+  font-size: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.tipHover {
+  position: absolute;
+  margin-top: 336px;
+  margin-left: 5px;
+  background-color: #141414;
+  z-index: 999;
+  height: 125px;
+  width: 405px;
+  display: none;
+  color: #f38f02;
+}
+
+.tipHoverWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  border: 1px solid #f38f02;
+  /* padding: 0 5px; */
+}
+.tipTitleContainer {
+  width: 98%;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 5px;
+}
+.tipListHolder {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  /* gap: 5px; */
+}
+.tipItem {
+  flex: 1 0 90px;
+  height: 50px;
+  background-color: #141414;
+  border: 1px solid #939793;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+}
+.tipItemImage {
+  height: 20px;
+  width: 20px;
+}
+.tipItemName {
+  color: #fbf8dd;
+}
+
+.tipItemPrice {
+  color: #f38f02;
+}
+
+.closeGift {
+  color: white;
+}
+.closeGift :hover {
+  cursor: pointer;
+}
+
+.sendGift {
+  border: 3px solid #c5946a;
+  border-radius: 0 0 0 10px;
+  border-right: none;
+  display: inline-block;
+  outline: 0;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 13px;
+  height: 50px;
+  background: rgb(73, 18, 33);
+  background: linear-gradient(
+    99deg,
+    rgba(73, 18, 33, 1) 0%,
+    rgba(44, 0, 15, 1) 90%
+  );
+  color: white;
+  padding: 0 10px;
+}
+
+.userName {
+  color: white;
+}
+.userBalance {
+  font-size: 12px;
+  color: white;
+  margin-right: 25px;
+}
+.tipTitleDiv1 {
+  display: flex;
+  align-items: center;
+}
